@@ -10,338 +10,225 @@
 			width: 600px;
 			margin: 0 auto;
 		}
-		p{
-			line-height: 1.8;
-			font-size: 18px;
-			letter-spacing: 1px;
+		.sec{
+			margin: 40px 0;
 		}
-		p span{
-			background: #ececec;
-	    display: inline-block;
-	    padding: 0px 5px;
-	    margin-bottom: 3px;
-	    border-radius: 3px;
-		}
-		h2{
-			padding: 10px 10px 10px 15px;
-			background: #f2f2f2;
-			margin-bottom: 24px;
-			font-size:20px;
-			border-left: 6px solid #455fa3;
-		}
-		h3{
-			padding: 5px 10px;
-			margin-bottom: 10px;
-			border-left: 4px solid #455fa3;	
-		}
-		.sec-l > p{
-			margin: 0 10px 10px 10px;
-		}
-		.sec-m{
-			margin: 0 10px 30px 10px;
-		}
-		.rank-name{
-			text-align: center;
-			padding: 10px 0;
-			font-size: 20px;
+		.skill-cat{
 			font-weight: bold;
+			text-align: center;
+			font-size: 20px;
+			margin-bottom: 10px;
 		}
-		.list {
-			margin: 10px 0;
-		  background: #fffcf4;
-		  border-radius :8px;
-		  box-shadow :0px 0px 5px silver;
-		  padding: 0.5em 0.5em 0.5em 2em;
+		table{
+		  width: 100%;
+		  border-collapse: collapse;
+		  border: solid 1px #ddd;
 		}
-		.list li {
-		  line-height: 1.5;
-		  padding: 0.3em 0;
+		table tr{
+		  border-bottom: solid 1px #ddd;
 		}
-		.list2 {
-			margin: 10px 0;
-		  box-shadow :0px 0px 3px silver;
-		  border: solid 1px whitesmoke;
-		  padding: 0.5em 1em 0.5em 2.3em;
+		table tr:last-child{
+		  border-bottom: none;
+		}
+		table th{
 		  position: relative;
-		  background: #fafafa;
+		  text-align: left;
+		  width: 80%;
+		  padding: 10px 20px;
 		}
-
-		.list2 li {
-		  line-height: 1.5;
-		  padding: 0.5em 0;
-		  list-style-type: none!important;
+		table td{
+		  text-align: left;
+		  width: 20%;
+		  text-align: center;
+		  background-color: #eee;
+		  padding: 10px 0;
+		  font-size: 30px;
 		}
-
-		.list2 li:before {
-		  content: "✔";
-		  position: absolute;
-		  left : 1em; /*左端からのアイコンまで*/
-		  color: gray; /*アイコン色*/
+		table td:after{
+			content: "○";
 		}
-		.hl{
-			padding: 20px;
-			background: #f1f1f1;
-		}
-		@media screen and (max-width: 768px){
-			.wrap{width: auto;margin: 0 10px;}
+		table td.is-active:after {
+			content: "●";
+			color: #23bf08;
 		}
 	</style>
 </head>
 <body>
 
 	<div class="wrap">
-
-		<div class="rank-area">
-			<div class="rank-name">中忍魔</div>
-			<section class="sec-l">
-				<h2>HTML,CSS<br>デザインデータからのコーディング</h2>
-				<section class="sec-m">
-					<h3>HTML/マークアップ</h3>
-					<p>
-						SEOを意識した基本的なHTMLのマークアップ<br>
-						しっかりインデントを取るのはマスト<br>
-						インデントはエディタのプラグインなどで対応するのも良い。
-					</p>
-					<ul class="list">
-						<li>TDK</li>
-						<li>OGP</li>
-						<li>favicon</li>
-					</ul>
-					<p>
-						などは先方から提示が無い場合があるので<br>
-						毎回必ず確認すること。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>CSS/アニメーション</h3>
-					<p>
-						CSS設計を考慮したコーディングが望ましいが<br>
-						projectによって方針が違うため<br>
-						「CSS設計とは何か」をある程度は理解しておこう。<br><br>
-					</p>
-					<p>
-						＜アニメーション＞<br>
-						キービジュアルなどで動きを要求される事があるため
-					</p>
-					<p class="hl">
-						CSSのみで実装できる動きか
-					</p>
-					<p>
-						をジャッジできる程度のスキルがあると良い。<br>
-						CSSだけでは難しいものを無理矢理頑張っても<br>
-						時間の無駄になる場合がある。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>動画の設置</h3>
-					<p>
-						昨今、動画の要望が多い為
-					</p>
-					<ul class="list">
-						<li>videoタグ</li>
-						<li>YouTubeAPI</li>
-					</ul>
-					<p>
-						どちらでも対応できるとGOOD<br>
-						ブラウザ依存が顕著に出る部分かつ<br>
-						仕様が変わりやすいため都度リサーチする事
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>form系のタグの理解</h3>
-					<p>
-						<span>form</span>、<span>input</span>、<span>textarea</span>、<span>button</span><br>
-						このあたりのタグはH1タグなどの普通のタグとは<br>
-						少し性質が違うのでform実装の経験を積みつつ覚えると良い。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>デザインツールからの情報取得</h3>
-					<ul class="list">
-						<li>Photoshop</li>
-						<li>Illustrator</li>
-						<li>XD</li>
-					</ul>
-					<p>
-						などの定番ツールからの情報取得には慣れておこう。<br>
-						ただデザイナーごとに変わる部分なので<br>
-						全てを網羅する必要は無いが<br>
-						ある程度は理解しておくと良い。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>画像加工</h3>
-					<p>
-						貰った画像データに不要な文字や写真が入っている場合がある。<br>
-						都度デザイナーに依頼していては負担になるため
-					</p>
-					<ul class="list2">
-						<li>トリミング</li>
-						<li>文字消し</li>
-						<li>文字変更</li>
-						<li>背景伸ばし</li>
-						<li>明るさ調整</li>
-						<li>ぼかし</li>
-					</ul>
-					<p>
-						このあたりをできる範囲で良いので覚えておくと<br>
-						依頼する側も融通が効きやすくなる。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>HTMLのデバック</h3>
-					<p>
-						既存のHTMLがエラーを起こしている場合がある為<br>
-						エラーの特定ができると良い。<br><br>
-						エラーを探すツールなども出回っているので<br>
-						ツールを使ってカバーするのも良し。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>ブラウザ依存系のCSS</h3>
-					<p>
-						プロパティによってはブラウザ依存があるので<br>
-						回避、又はプラグインなどで対応するスキル。
-					</p>
-				</section>
-			</section>
-			<section class="sec-l">
-				<h2>SASS</h2>
-				<section class="sec-m">
-					<h3>コンパイル</h3>
-					<p>
-						SASSで書いた記述はCSSに変換(コンパイル)される。<br>
-						なのでコンパイルの方法は覚えておこう。<br><br>
-						<span>npm</span>や<span>sassのみ</span>など環境で違う為<br>
-						もしコンパイル方法がどうしてもわからない場合は<br>
-						projectの技術責任者に確認するのも手段の一つだ。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>便利な機能</h3>
-					<ul class="list2">
-						<li>入れ子（ネスト）</li>
-						<li>変数</li>
-						<li>タイルの継承</li>
-						<li>関数</li>
-						<li>mixin</li>
-					</ul>
-					<p>
-						<a href="https://uxmilk.jp/38092" target="_blank">参考：https://uxmilk.jp/38092</a>
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>CSS設計</h3>
-					<p>
-						SASSを使う上で出てくるのが<br>
-						<span>CSS設計</span>だ。<br><br>
-						主なCSS設計手法として
-					</p>
-					<ul class="list">
-						<li>BEM</li>
-						<li>OOCSS</li>
-						<li>SMACSS</li>
-					</ul>
-					<p>
-						などがあげられる。<br>
-						しかしこれら全てを使いこなすのは結構大変だ<br>
-						なのでまずは<span>BEM</span>から覚えるのが良いだろう。
-					</p>
-				</section>
-			</section>
-			<section class="sec-l">
-				<h2>JavaScript</h2>
-				<p>JavaScriptは範囲が広い為リスト形式で紹介。</p>
-				<section class="sec-m"><h3>変数/定数</h3></section>
-				<section class="sec-m"><h3>配列</h3></section>
-				<section class="sec-m"><h3>関数</h3></section>
-				<section class="sec-m"><h3>ループ</h3></section>
-				<section class="sec-m"><h3>イベント</h3></section>
-				<section class="sec-m"><h3>スコープ</h3></section>
-				<section class="sec-m"><h3>Ajax</h3></section>
-				<section class="sec-m"><h3>FileReader</h3></section>
-				<section class="sec-m"><h3>YouTubeAPI</h3></section>
-				<section class="sec-m"><h3>プラグインの導入</h3></section>
-				<section class="sec-m">
-					<h3>よく使う動き</h3>
-					<ul class="list">
-						<li>ハンバーガーメニュー</li>
-						<li>アコーディオン</li>
-						<li>ページトップ</li>
-						<li>モーダル</li>
-						<li>スライダー</li>
-						<li>ローディング</li>
-					</ul>
-				</section>
-			</section>
-			<section class="sec-l">
-				<h2>バージョン管理</h2>
-				<section class="sec-m">
-					<h3>Git</h3>
-					<p>
-						今はGitが主流なのでしっかり覚えておこう。
-					</p>
-					<ul class="list2">
-						<li>branch</li>
-						<li>checkout</li>
-						<li>status</li>
-						<li>diff</li>
-						<li>add</li>
-						<li>commit</li>
-						<li>push</li>
-						<li>fetch</li>
-					</ul>
-					<p>
-						全てを上げると霧がないが<br>
-						このあたりの良く使うコマンドは覚えておこう。
-						<a href="https://qiita.com/uhooi/items/c26c7c1beb5b36e7418e" target="_blank">参考：https://qiita.com/uhooi/items/c26c7c1beb5b36e7418e</a>
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>GitとGitHubの違い</h3>
-					<p>
-						良く混乱するがここで詰まると<br>
-						話が理解できなくなる可能性があるので<br>
-						念の為覚えておこう。<br>
-						<a href="https://www.i3design.jp/in-pocket/3111" target="_blank">参考：https://www.i3design.jp/in-pocket/3111</a>
-					</p>
-				</section>
-			</section>
-			<section class="sec-l">
-				<h2>ファイルのアップロード</h2>
-				<section class="sec-m">
-					<h3>FTP</h3>
-					<p>
-						FTPを使ったファイルアップロードは覚えておこう<br>
-						先方からアップロードも含めて依頼される事は<br>
-						少なくない。<br><br>
-						アプリを使えばさほど難しくないので<br>
-						まずは使いやすいアプリを見つけよう。
-					</p>
-					<ul class="list2">
-						<li>WinSCP</li>
-						<li>FFFTP</li>
-						<li>Filezilla</li>
-						<li>Cyberduck</li>
-					</ul>
-					<p>
-						このあたりは人気なのでオススメだ。<br>
-						有料だが<span>Transmit</span>も良い。
-					</p>
-				</section>
-				<section class="sec-m">
-					<h3>SSH</h3>
-					<p>
-						SSHを使う場合コマンドだと難易度が上がるため<br>
-						<span>VSCode</span>プラグインの<span>Remote - SSH</span>などを使ってアップロードすると簡単だ。
-						<a href="https://qiita.com/nlog2n2/items/1d1358f6913249f3e186" target="_blank">https://qiita.com/nlog2n2/items/1d1358f6913249f3e186</a>
-					</p>
-				</section>
-			</section>
+		<div class="sec">
+			<div class="skill-cat">＜ HTML/CSS コーディング　＞</div>
+			<table class="skill-table">
+			  <tr><th>基本的なマークアップ</th><td></td></tr>
+			  <tr><th>TDKの理解</th><td></td></tr>
+			  <tr><th>OGPの反映</th><td></td></tr>
+			  <tr><th>faviconの反映</th><td></td></tr>
+			  <tr><th>属性の理解</th><td></td></tr>
+			  <tr><th>画像の遅延読み込み</th><td></td></tr>
+			  <tr><th>内部リンクの指定</th><td></td></tr>
+			  <tr><th>リセットCSS</th><td></td></tr>
+			  <tr><th>カスタムデータ属性</th><td></td></tr>
+			  <tr><th>GoogleAnalyticsの設置</th><td></td></tr>
+			  <tr><th>絶対パスと相対パスの違い</th><td></td></tr>
+			  <tr><th>ドキュメントルートの理解</th><td></td></tr>
+			  <tr><th>nofollow/noindexの理解</th><td></td></tr>
+			</table>
 		</div>
-
+		<div class="sec">
+			<div class="skill-cat">＜ デザインツール　＞</div>
+			<table class="skill-table">
+			  <tr><th>画像保存</th><td></td></tr>
+			  <tr><th>色コード取得</th><td></td></tr>
+			  <tr><th>マージン取得</th><td></td></tr>
+			  <tr><th>パディング取得</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ デベロッパーツール　＞</div>
+			<table class="skill-table">
+			  <tr><th>HTMLの確認/変更</th><td></td></tr>
+			  <tr><th>CSSの確認/変更</th><td></td></tr>
+			  <tr><th>ネットワークの確認</th><td></td></tr>
+			  <tr><th>デバイス切り替え</th><td></td></tr>
+			  <tr><th>ログを見る</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ CSSアニメーション　＞</div>
+			<table class="skill-table">
+			  <tr><th>@keyframesの理解</th><td></td></tr>
+			  <tr><th>animationプロパティの理解</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ レスポンシブ対応　＞</div>
+			<table class="skill-table">
+			  <tr><th>メディアクエリの理解</th><td></td></tr>
+			  <tr><th>横並びを解除する</th><td></td></tr>
+			  <tr><th>非表示にする</th><td></td></tr>
+			  <tr><th>画像サイズの変更</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ GIT　＞</div>
+			<table class="skill-table">
+			  <tr><th>branch</th><td></td></tr>
+			  <tr><th>checkout</th><td></td></tr>
+			  <tr><th>status</th><td></td></tr>
+			  <tr><th>diff</th><td></td></tr>
+			  <tr><th>add</th><td></td></tr>
+			  <tr><th>commit</th><td></td></tr>
+			  <tr><th>push</th><td></td></tr>
+			  <tr><th>fetch</th><td></td></tr>
+			  <tr><th>clone</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ 動画設置　＞</div>
+			<table class="skill-table">
+			  <tr><th>movieタグでの設置</th><td></td></tr>
+			  <tr><th>YouTube APIでの設置</th><td></td></tr>
+			  <tr><th>動画サイズ圧縮</th><td></td></tr>
+			  <tr><th>音をミュート</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ SASS　＞</div>
+			<table class="skill-table">
+			  <tr><th>コンパイル</th><td></td></tr>
+			  <tr><th>&記法</th><td></td></tr>
+			  <tr><th>ファイルのインポート</th><td></td></tr>
+			  <tr><th>変数</th><td></td></tr>
+			  <tr><th>関数</th><td></td></tr>
+			  <tr><th>繰り返し</th><td></td></tr>
+			  <tr><th>ネスト記法</th><td></td></tr>
+			  <tr><th>@mixin</th><td></td></tr>
+			  <tr><th>@extend</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ JavaScript　＞</div>
+			<table class="skill-table">
+			  <tr><th>変数/定数</th><td></td></tr>
+			  <tr><th>配列</th><td></td></tr>
+			  <tr><th>分岐</th><td></td></tr>
+			  <tr><th>組み込み関数</th><td></td></tr>
+			  <tr><th>独自関数</th><td></td></tr>
+			  <tr><th>ループ</th><td></td></tr>
+			  <tr><th>イベント</th><td></td></tr>
+			  <tr><th>スコープ</th><td></td></tr>
+			  <tr><th>Ajax</th><td></td></tr>
+			  <tr><th>FileReader</th><td></td></tr>
+			  <tr><th>FormData</th><td></td></tr>
+			  <tr><th>async/await</th><td></td></tr>
+			  <tr><th>プラグインの導入</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ 動き(js/css)　＞</div>
+			<table class="skill-table">
+			  <tr><th>ハンバーガーメニュー</th><td></td></tr>
+			  <tr><th>スライダー</th><td></td></tr>
+			  <tr><th>モーダル</th><td></td></tr>
+			  <tr><th>ページトップ</th><td></td></tr>
+			  <tr><th>要素の追従</th><td></td></tr>
+			  <tr><th>ホバーで要素を動かす</th><td></td></tr>
+			  <tr><th>ホバーで画像拡大</th><td></td></tr>
+			  <tr><th>スクロールに応じて要素を出す</th><td></td></tr>
+			  <tr><th>ローディング</th><td></td></tr>
+			  <tr><th>アコーディオン</th><td></td></tr>
+			  <tr><th>フェイドイン/フェイドアウト</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ ファイルアップロード　＞</div>
+			<table class="skill-table">
+			  <tr><th>FTPでのアップ</th><td></td></tr>
+			  <tr><th>SSHでのアップ</th><td></td></tr>
+			  <tr><th>FTPツールを持っている</th><td></td></tr>
+			  <tr><th>SSHツールを持っている</th><td></td></tr>
+			  <tr><th>ファイルのバックアップが取れる</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ 画像加工　＞</div>
+			<table class="skill-table">
+			  <tr><th>リサイズ</th><td></td></tr>
+			  <tr><th>トリミング</th><td></td></tr>
+			  <tr><th>明るくする</th><td></td></tr>
+			  <tr><th>ぼかし</th><td></td></tr>
+			  <tr><th>暗くする</th><td></td></tr>
+			  <tr><th>文字を消す</th><td></td></tr>
+			  <tr><th>文字を追加する</th><td></td></tr>
+			  <tr><th>背景を伸ばす</th><td></td></tr>
+			  <tr><th>枠をつける</th><td></td></tr>
+			  <tr><th>クリッピングマスク</th><td></td></tr>
+			  <tr><th>画像圧縮</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ コマンドライン　＞</div>
+			<table class="skill-table">
+			  <tr><th>移動</th><td></td></tr>
+			  <tr><th>カレントの表示</th><td></td></tr>
+			  <tr><th>ファイルの中身を表示</th><td></td></tr>
+			  <tr><th>一覧表示</th><td></td></tr>
+			  <tr><th>フォルダの作成/削除</th><td></td></tr>
+			  <tr><th>ファイルの作成/削除</th><td></td></tr>
+			  <tr><th>パーミッションの変更</th><td></td></tr>
+			</table>
+		</div>
 	</div>
 	
+
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>	
+	<script>
+		$(function(){
+			$('.skill-table td').on('click',function(){
+			  $(this).toggleClass('is-active');
+			});
+		});
+	</script>
 </body>
 </html>
 
