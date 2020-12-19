@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;color: #333;}
+		.wrap{
+			width: 600px;
+			margin: 0 auto;
+		}
+		.sec{
+			margin: 40px 0;
+		}
+		.skill-cat{
+			font-weight: bold;
+			text-align: center;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		table{
+		  width: 100%;
+		  border-collapse: collapse;
+		  border: solid 1px #ddd;
+		}
+		table tr{
+		  border-bottom: solid 1px #ddd;
+		}
+		table tr:last-child{
+		  border-bottom: none;
+		}
+		table th{
+		  position: relative;
+		  text-align: left;
+		  width: 80%;
+		  padding: 10px 20px;
+		}
+		table td{
+		  text-align: left;
+		  width: 20%;
+		  text-align: center;
+		  background-color: #eee;
+		  padding: 10px 0;
+		  font-size: 30px;
+		}
+		table td:after{
+			content: "○";
+		}
+		table td.is-active:after {
+			content: "●";
+			color: #23bf08;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<div class="sec">
+			<div class="skill-cat">＜ HTML/CSS コーディング　＞</div>
+			<table class="skill-table">
+			  <tr><th>基本的なマークアップ</th><td></td></tr>
+			  <tr><th>TDKの理解</th><td></td></tr>
+			  <tr><th>OGPの反映</th><td></td></tr>
+			  <tr><th>faviconの反映</th><td></td></tr>
+			  <tr><th>属性の理解</th><td></td></tr>
+			  <tr><th>画像の遅延読み込み</th><td></td></tr>
+			  <tr><th>内部リンクの指定</th><td></td></tr>
+			  <tr><th>リセットCSS</th><td></td></tr>
+			  <tr><th>カスタムデータ属性</th><td></td></tr>
+			  <tr><th>GoogleAnalyticsの設置</th><td></td></tr>
+			  <tr><th>絶対パスと相対パスの違い</th><td></td></tr>
+			  <tr><th>ドキュメントルートの理解</th><td></td></tr>
+			  <tr><th>nofollow/noindexの理解</th><td></td></tr>
+			</table>
+		</div>
+		<!-- <div class="sec">
+			<div class="skill-cat">＜ デザインツール　＞</div>
+			<table class="skill-table">
+			  <tr><th>画像保存</th><td></td></tr>
+			  <tr><th>色コード取得</th><td></td></tr>
+			  <tr><th>マージン取得</th><td></td></tr>
+			  <tr><th>パディング取得</th><td></td></tr>
+			</table>
+		</div> -->
+		<div class="sec">
+			<div class="skill-cat">＜ デベロッパーツール　＞</div>
+			<table class="skill-table">
+			  <tr><th>HTMLの確認/変更</th><td></td></tr>
+			  <tr><th>CSSの確認/変更</th><td></td></tr>
+			  <tr><th>ネットワークの確認</th><td></td></tr>
+			  <tr><th>デバイス切り替え</th><td></td></tr>
+			  <tr><th>ログを見る</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ CSSアニメーション　＞</div>
+			<table class="skill-table">
+			  <tr><th>@keyframesの理解</th><td></td></tr>
+			  <tr><th>animationプロパティの理解</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ レスポンシブ対応　＞</div>
+			<table class="skill-table">
+			  <tr><th>メディアクエリの理解</th><td></td></tr>
+			  <tr><th>横並びを解除する</th><td></td></tr>
+			  <tr><th>非表示にする</th><td></td></tr>
+			  <tr><th>画像サイズの変更</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ GIT　＞</div>
+			<table class="skill-table">
+			  <tr><th>branch</th><td></td></tr>
+			  <tr><th>checkout</th><td></td></tr>
+			  <tr><th>status</th><td></td></tr>
+			  <tr><th>diff</th><td></td></tr>
+			  <tr><th>add</th><td></td></tr>
+			  <tr><th>commit</th><td></td></tr>
+			  <tr><th>push</th><td></td></tr>
+			  <tr><th>fetch</th><td></td></tr>
+			  <tr><th>clone</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ 動画設置　＞</div>
+			<table class="skill-table">
+			  <tr><th>movieタグでの設置</th><td></td></tr>
+			  <tr><th>YouTube APIでの設置</th><td></td></tr>
+			  <tr><th>動画サイズ圧縮</th><td></td></tr>
+			  <tr><th>音をミュート</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ SASS　＞</div>
+			<table class="skill-table">
+			  <tr><th>コンパイル</th><td></td></tr>
+			  <tr><th>&記法</th><td></td></tr>
+			  <tr><th>ファイルのインポート</th><td></td></tr>
+			  <tr><th>変数</th><td></td></tr>
+			  <tr><th>関数</th><td></td></tr>
+			  <tr><th>繰り返し</th><td></td></tr>
+			  <tr><th>ネスト記法</th><td></td></tr>
+			  <tr><th>@mixin</th><td></td></tr>
+			  <tr><th>@extend</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ JavaScript　＞</div>
+			<table class="skill-table">
+			  <tr><th>変数/定数</th><td></td></tr>
+			  <tr><th>配列</th><td></td></tr>
+			  <tr><th>分岐</th><td></td></tr>
+			  <tr><th>組み込み関数</th><td></td></tr>
+			  <tr><th>独自関数</th><td></td></tr>
+			  <tr><th>ループ</th><td></td></tr>
+			  <tr><th>イベント</th><td></td></tr>
+			  <tr><th>スコープ</th><td></td></tr>
+			  <tr><th>Ajax</th><td></td></tr>
+			  <tr><th>FileReader</th><td></td></tr>
+			  <tr><th>FormData</th><td></td></tr>
+			  <tr><th>async/await</th><td></td></tr>
+			  <tr><th>プラグインの導入</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ 動き(js/css)　＞</div>
+			<table class="skill-table">
+			  <tr><th>ハンバーガーメニュー</th><td></td></tr>
+			  <tr><th>スライダー</th><td></td></tr>
+			  <tr><th>モーダル</th><td></td></tr>
+			  <tr><th>ページトップ</th><td></td></tr>
+			  <tr><th>要素の追従</th><td></td></tr>
+			  <tr><th>ホバーで要素を動かす</th><td></td></tr>
+			  <tr><th>ホバーで画像拡大</th><td></td></tr>
+			  <tr><th>スクロールに応じて要素を出す</th><td></td></tr>
+			  <tr><th>ローディング</th><td></td></tr>
+			  <tr><th>アコーディオン</th><td></td></tr>
+			  <tr><th>フェイドイン/フェイドアウト</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ ファイルアップロード　＞</div>
+			<table class="skill-table">
+			  <tr><th>FTPでのアップ</th><td></td></tr>
+			  <tr><th>SSHでのアップ</th><td></td></tr>
+			  <tr><th>FTPツールを持っている</th><td></td></tr>
+			  <tr><th>SSHツールを持っている</th><td></td></tr>
+			  <tr><th>ファイルのバックアップが取れる</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ 画像加工　＞</div>
+			<table class="skill-table">
+			  <tr><th>リサイズ</th><td></td></tr>
+			  <tr><th>トリミング</th><td></td></tr>
+			  <tr><th>明るくする</th><td></td></tr>
+			  <tr><th>ぼかし</th><td></td></tr>
+			  <tr><th>暗くする</th><td></td></tr>
+			  <tr><th>文字を消す</th><td></td></tr>
+			  <tr><th>文字を追加する</th><td></td></tr>
+			  <tr><th>背景を伸ばす</th><td></td></tr>
+			  <tr><th>枠をつける</th><td></td></tr>
+			  <tr><th>クリッピングマスク</th><td></td></tr>
+			  <tr><th>画像圧縮</th><td></td></tr>
+			</table>
+		</div>
+		<div class="sec">
+			<div class="skill-cat">＜ コマンドライン　＞</div>
+			<table class="skill-table">
+			  <tr><th>移動</th><td></td></tr>
+			  <tr><th>カレントの表示</th><td></td></tr>
+			  <tr><th>ファイルの中身を表示</th><td></td></tr>
+			  <tr><th>一覧表示</th><td></td></tr>
+			  <tr><th>フォルダの作成/削除</th><td></td></tr>
+			  <tr><th>ファイルの作成/削除</th><td></td></tr>
+			  <tr><th>パーミッションの変更</th><td></td></tr>
+			</table>
+		</div>
+	</div>
+	
+
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>	
+	<script>
+		$(function(){
+			$('.skill-table td').on('click',function(){
+			  $(this).toggleClass('is-active');
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
